@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:  'Mate', Helvetica, Arial, sans-serif;
   }
 
   #app {
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Mate', Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
 `;

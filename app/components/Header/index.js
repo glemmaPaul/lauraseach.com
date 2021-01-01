@@ -1,27 +1,37 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 
-import A from './A';
-import Img from './Img';
-import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+const BigHeader = styled.h1`
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+`;
+
+const SubTitle = styled.h2`
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Mate', serif;
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
 
 function Header() {
   return (
     <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
-      <NavBar>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
-      </NavBar>
+      <BigHeader>Laura Seach</BigHeader>
+      <SubTitle>
+        <a href="mailto:seach.laura@gmail.com">seach.laura@gmail.com</a> |
+        <a href="tel:+15613461561">+1 561-346-1561</a> | Based in Berlin
+      </SubTitle>
     </div>
   );
 }
